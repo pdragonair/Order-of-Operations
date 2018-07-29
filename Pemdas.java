@@ -39,40 +39,6 @@ public class Pemdas {
             return false;
     }
 
-//    public static String postSetup(String s){
-//        Stack<Character> post = new Stack<Character>();
-//        String newString = "";
-//        for(int i = 0; i < s.length(); i++){
-//            if (s.charAt(i) != '(' && s.charAt(i) != ')' && s.charAt(i) != '+' && s.charAt(i) != '-' && s.charAt(i) != '/' && s.charAt(i) != '*') {
-//                newString += s.charAt(i);
-//            }
-//            else if (s.charAt(i) == ')'){
-//                while(post.peek() != '(')
-//                    newString += post.pop();
-//                if(post.peek() == '(')
-//                    post.pop();
-//                }
-//            else{
-//                if(s.charAt(i) == '*' || s.charAt(i) == '/') {
-//                    while(!post.isEmpty() && (post.peek() != '(' || post.peek() != '+' || post.peek() != '-')) {
-//                        newString += post.pop();
-//                    }
-//                }
-//                if(s.charAt(i) == '+' || s.charAt(i) == '-') {
-//                    while (!post.isEmpty() && post.peek() != '(') {
-//                        newString += post.pop();
-//                    }
-//                }
-//                post.push(s.charAt(i));
-//            }
-//        }
-//        while(!post.isEmpty()){
-//            newString += post.pop();
-//        }
-//        return newString;
-//
-//    }
-
 
     public static String postSetup(String s){
         Stack<Character> post = new Stack<Character>();
